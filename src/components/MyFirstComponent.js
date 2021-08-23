@@ -4,7 +4,7 @@ class MyFirstComponent extends Component{
     render() {
         return (
             <div>
-                I am content of a child
+                I am content of a child hello
             </div>
         );
 
