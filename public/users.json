@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Isaac",
+        "balance": "100",
+        "noOfGamesPlayed": "10",
+        "price": 900000,
+        "photo": "277667"
+    },
+    {
+        "id": 2,
+        "name": "Jason",
+        "balance": "50",
+        "noOfGamesPlayed": "20",
+        "price": 500000,
+        "photo": "462358"
+    },
+    {
+        "id": 3,
+        "name": "Ace",
+        "balance": "10",
+        "noOfGamesPlayed": "25",
+        "price": 200500,
+        "photo": "259600"
+    },
+    {
+        "id": 4,
+        "name": "Jay",
+        "balance": "5",
+        "noOfGamesPlayed": "5",
+        "price": 259500,
+        "photo": "534182"
+    },
+    {
+        "id": 5,
+        "name": "Paul",
+        "balance": "15",
+        "noOfGamesPlayed": "20",
+        "price": 400500,
+        "photo": "164558"
+    }
+]
