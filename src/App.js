@@ -1,11 +1,8 @@
 import './App.css';
-import MyFirstComponent from './components/MyFirstComponent';
-import Card from './components/CardComponent';
 import HeaderComponent from './components/HeaderComponent';
 import {useEffect, useState, useMemo} from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import FeaturedUser from './components/FeaturedUser';
-import User from './components/User';
 import SearchResult from './components/SearchResult';
 import UserFilter from './components/UserFilter';
 
