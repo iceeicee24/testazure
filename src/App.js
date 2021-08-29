@@ -2,9 +2,9 @@ import './App.css';
 import FacebookLogin from 'react-facebook-login';
 import { Card, Image } from 'react-bootstrap';
 import HeaderComponent from './components/HeaderComponent';
-import {useEffect, useState, useMemo} from 'react';
-import {BrowserRouter as Router, Switch, Route, useLocation, Redirect} from 'react-router-dom'
-import FeaturedUser from './components/FeaturedUser';
+import {useEffect, useState} from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+//import FeaturedUser from './components/FeaturedUser';
 import SearchResult from './components/SearchResult';
 import UserFilter from './components/UserFilter';
 
@@ -30,12 +30,12 @@ function App() {
     fetchHouses();
   }, []);
 
-  const featuredHouse = useMemo(() => {
+  /*const featuredHouse = useMemo(() => {
     if (allHouses.length) {
       const randomIndex = Math.floor(Math.random() * allHouses.length);
       return allHouses[randomIndex];
     }
-  }, [allHouses]);
+  }, [allHouses]);*/
 
   const responseFacebook = (response) => {
     console.log(response);
