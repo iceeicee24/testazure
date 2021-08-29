@@ -51,6 +51,22 @@ function App() {
   return (
     <div>
       
+      <Router>
+                <div className='container'>
+                  <HeaderComponent userName={data.name}></HeaderComponent>
+                  <UserFilter allUsers={allHouses}/>
+
+                  <Switch>
+                  <Route path="/searchresults/:user">
+                      <SearchResult allUsers={allHouses}/>
+                    </Route>
+                    <Route path="/">
+                      {/*<FeaturedUser user={featuredHouse} />*/}
+                    </Route>
+                  </Switch>
+                </div>
+              </Router>  
+{/*
       <Card style={{ width: '600px' }}>
         <Card.Header>
           {!login &&
@@ -84,7 +100,7 @@ function App() {
                       <SearchResult allUsers={allHouses}/>
                     </Route>
                     <Route path="/">
-                      {/*<FeaturedUser user={featuredHouse} />*/}
+                      <FeaturedUser user={featuredHouse} />
                     </Route>
                   </Switch>
                 </div>
@@ -94,7 +110,7 @@ function App() {
           </Card.Body>
           
         }
-      </Card>
+      </Card>*/}
      
     </div>
   );
