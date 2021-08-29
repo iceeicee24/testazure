@@ -49,7 +49,7 @@ function App() {
   }
 
   return (
-    <div class="container">
+    <div>
       
       <Card style={{ width: '600px' }}>
         <Card.Header>
