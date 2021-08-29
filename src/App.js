@@ -1,6 +1,6 @@
 import './App.css';
-import FacebookLogin from 'react-facebook-login';
-import { Card, Image } from 'react-bootstrap';
+//import FacebookLogin from 'react-facebook-login';
+//import { Card, Image } from 'react-bootstrap';
 import HeaderComponent from './components/HeaderComponent';
 import {useEffect, useState} from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
@@ -15,9 +15,9 @@ import UserFilter from './components/UserFilter';
 
 function App() {
 
-  const [login, setLogin] = useState(false);
-  const [data, setData] = useState({});
-  const [picture, setPicture] = useState('');
+  //const [login, setLogin] = useState(false);
+  //const [data, setData] = useState({});
+  //const [picture, setPicture] = useState('');
   const [allHouses, setAllUsers] = useState([]);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ function App() {
       const randomIndex = Math.floor(Math.random() * allHouses.length);
       return allHouses[randomIndex];
     }
-  }, [allHouses]);*/
+  }, [allHouses]);
 
   const responseFacebook = (response) => {
     console.log(response);
@@ -47,14 +47,14 @@ function App() {
     } else {
       setLogin(false);
     }
-  }
+  }*/
 
   return (
     <div>
       
       <Router>
                 <div className='container'>
-                  <HeaderComponent userName={data.name}></HeaderComponent>
+                  <HeaderComponent userName='isaac'></HeaderComponent>
                   <UserFilter allUsers={allHouses}/>
 
                   <Switch>
