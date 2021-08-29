@@ -19,7 +19,7 @@ const UserFilter = ({allUsers}) => {
     return(
         <div className="row mt-3">
             <div className="offset-md-2 col-md-4">
-                Look for a user:
+                Select a user profile:
             </div>
             <div className="col-md-4 mb-3">
                 <select className="form-select" onChange={onSearchChange}>
