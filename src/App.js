@@ -22,7 +22,8 @@ function App() {
 
   useEffect(() => {
     const fetchHouses = async () => {
-      const rsp = await fetch("https://crud123.azurewebsites.net/api/test");
+      //const rsp = await fetch("https://crud123.azurewebsites.net/api/test");
+      const rsp = await fetch("users.json");
       const houses = await rsp.json();
       console.log(houses);
       setAllUsers(houses);
