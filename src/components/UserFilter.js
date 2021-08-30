@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 const UserFilter = ({allUsers}) => {
 
     const history = useHistory();
-
     const users = allUsers
     ? Array.from(new Set(allUsers.map((h) => 
         h.name
